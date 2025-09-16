@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HP Construção Civil e Montagem - Contatos</title>
     <style>
+        /* --- Variáveis de Cor e Fontes --- */
         :root {
             --bg-color: #f4f4f9;
             --text-color: #333;
@@ -12,92 +13,124 @@
             --secondary-color: #4A4A4A; /* Cinza do logo */
             --accent-color: #001F3F; /* Azul escuro do logo */
             --card-bg: #ffffff;
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
+
+        /* --- Reset e Estilos Globais --- */
         body {
             margin: 0;
             padding: 20px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: var(--font-family);
             background-color: var(--bg-color);
             color: var(--text-color);
             display: flex;
             justify-content: center;
             align-items: flex-start;
             min-height: 100vh;
+            box-sizing: border-box; /* Garante que padding não afete a largura total */
         }
+
+        /* --- Container Principal --- */
         .container {
             max-width: 680px;
             width: 100%;
             text-align: center;
         }
+
+        /* --- Logo / Foto de Perfil --- */
         .profile-pic {
-            width: 120px; /* Tamanho padrão para telas maiores */
+            width: 120px;
             height: 120px;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid var(--card-bg);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             margin-bottom: 15px;
+            transition: width 0.3s ease, height 0.3s ease; /* Animação suave */
         }
+
+        /* --- Textos --- */
         h1 {
             font-size: 1.5em;
             color: var(--accent-color);
             margin: 0;
         }
-        p {
+        p.subtitle {
             font-size: 1em;
             color: var(--secondary-color);
             margin-top: 5px;
+            margin-bottom: 30px;
         }
+
+        /* --- Lista de Links --- */
         .links-list {
             list-style: none;
             padding: 0;
-            margin-top: 30px;
+            margin: 0;
         }
         .links-list li {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
         }
         .links-list a {
             display: block;
-            padding: 15px 20px;
+            padding: 16px 20px;
             background-color: var(--card-bg);
             color: var(--accent-color);
             text-decoration: none;
             font-weight: 600;
+            font-size: 1em;
             border-radius: 8px;
             border: 2px solid var(--accent-color);
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
-        .links-list a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        .links-list a:hover, .links-list a:focus {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
+
+        /* Botão de Destaque (WhatsApp) */
         .links-list a.highlight {
             background-color: var(--primary-color);
             color: white;
             border-color: var(--primary-color);
         }
+
+        /* --- Rodapé --- */
         .footer {
             margin-top: 40px;
-            font-size: 0.8em;
+            padding-bottom: 20px;
+            font-size: 0.85em;
             color: #999;
         }
-        /* AJUSTE PARA CELULAR: Reduz o tamanho do logo em telas menores */
+
+        /* --- Media Queries para Responsividade --- */
+        /* Para tablets e celulares maiores */
+        @media (max-width: 768px) {
+            h1 { font-size: 1.4em; }
+            p.subtitle { font-size: 0.95em; }
+        }
+
+        /* Para celulares */
         @media (max-width: 480px) {
             .profile-pic {
                 width: 100px;
                 height: 100px;
             }
+            h1 { font-size: 1.2em; }
+            p.subtitle { font-size: 0.9em; }
+            .links-list a { padding: 14px 15px; }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="logo-hp.png" alt="Logo HP Construção Civil" class="profile-pic">
+        <!-- O nome do arquivo do logo foi corrigido para "logo.png" -->
+        <img src="WhatsApp Image 2025-09-16 at 11.40.25" alt="Logo HP Construção Civil" class="profile-pic">
         
         <h1>HP Construção Civil e Montagem</h1>
-        <p>Soluções em construção e montagem industrial.</p>
+        <p class="subtitle">Soluções em construção e montagem industrial.</p>
 
         <ul class="links-list">
             <li>
@@ -128,7 +161,7 @@
         </ul>
 
         <div class="footer">
-            <p>&copy; 2025 HP Construção Civil e Montagem. Todos os direitos reservados.</p>
+            <p>&copy; 2025 HP Construção Civil e Montagem</p>
         </div>
     </div>
 
