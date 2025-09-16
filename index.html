@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HP Construção Civil e Montagem - Contatos</title>
     <style>
-        /* --- Variáveis de Cor e Fontes --- */
         :root {
             --bg-color: #f4f4f9;
             --text-color: #333;
-            --primary-color: #FF6B00; /* Laranja do logo */
-            --secondary-color: #4A4A4A; /* Cinza do logo */
-            --accent-color: #001F3F; /* Azul escuro do logo */
+            --primary-color: #FF6B00;
+            --secondary-color: #4A4A4A;
+            --accent-color: #001F3F;
             --card-bg: #ffffff;
             --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
-
-        /* --- Reset e Estilos Globais --- */
         body {
             margin: 0;
             padding: 20px;
@@ -27,17 +24,13 @@
             justify-content: center;
             align-items: flex-start;
             min-height: 100vh;
-            box-sizing: border-box; /* Garante que padding não afete a largura total */
+            box-sizing: border-box;
         }
-
-        /* --- Container Principal --- */
         .container {
             max-width: 680px;
             width: 100%;
             text-align: center;
         }
-
-        /* --- Logo / Foto de Perfil --- */
         .profile-pic {
             width: 120px;
             height: 120px;
@@ -46,10 +39,8 @@
             border: 4px solid var(--card-bg);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             margin-bottom: 15px;
-            transition: width 0.3s ease, height 0.3s ease; /* Animação suave */
+            transition: width 0.3s ease, height 0.3s ease;
         }
-
-        /* --- Textos --- */
         h1 {
             font-size: 1.5em;
             color: var(--accent-color);
@@ -61,8 +52,6 @@
             margin-top: 5px;
             margin-bottom: 30px;
         }
-
-        /* --- Lista de Links --- */
         .links-list {
             list-style: none;
             padding: 0;
@@ -88,82 +77,44 @@
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
-
-        /* Botão de Destaque (WhatsApp) */
         .links-list a.highlight {
             background-color: var(--primary-color);
             color: white;
             border-color: var(--primary-color);
         }
-
-        /* --- Rodapé --- */
         .footer {
             margin-top: 40px;
             padding-bottom: 20px;
             font-size: 0.85em;
             color: #999;
         }
-
-        /* --- Media Queries para Responsividade --- */
-        /* Para tablets e celulares maiores */
-        @media (max-width: 768px) {
-            h1 { font-size: 1.4em; }
-            p.subtitle { font-size: 0.95em; }
-        }
-
-        /* Para celulares */
         @media (max-width: 480px) {
             .profile-pic {
                 width: 100px;
                 height: 100px;
             }
-            h1 { font-size: 1.2em; }
-            p.subtitle { font-size: 0.9em; }
-            .links-list a { padding: 14px 15px; }
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- O nome do arquivo do logo foi corrigido para "logo.png" -->
-        <img src="WhatsApp Image 2025-09-16 at 11.40.25" alt="Logo HP Construção Civil" class="profile-pic">
+        <!-- CORREÇÃO FINAL: O nome do arquivo agora é "logo.jpeg" -->
+        <img src="logo.jpeg" alt="Logo HP Construção Civil" class="profile-pic">
         
         <h1>HP Construção Civil e Montagem</h1>
         <p class="subtitle">Soluções em construção e montagem industrial.</p>
 
         <ul class="links-list">
-            <li>
-                <a href="https://wa.me/5512988543694" target="_blank" class="highlight">
-                    Solicite um Orçamento via WhatsApp
-                </a>
-            </li>
-            <li>
-                <a href="https://instagram.com/hpcon_strucaocivil" target="_blank">
-                    Conheça Nossos Projetos (Portfólio )
-                </a>
-            </li>
-            <li>
-                <a href="https://instagram.com/hpcon_strucaocivil" target="_blank">
-                    Siga-nos no Instagram
-                </a>
-            </li>
-            <li>
-                <a href="mailto:construcaocivilhp@gmail.com" target="_blank">
-                    Contato via E-mail
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/maps/search/?api=1&query=São+José+dos+Campos+SP" target="_blank">
-                    Nossa Localização (São José dos Campos )
-                </a>
-            </li>
+            <li><a href="https://wa.me/5512988543694" target="_blank" class="highlight">Solicite um Orçamento via WhatsApp</a></li>
+            <li><a href="https://instagram.com/hpcon_strucaocivil" target="_blank">Conheça Nossos Projetos (Portfólio )</a></li>
+            <li><a href="https://instagram.com/hpcon_strucaocivil" target="_blank">Siga-nos no Instagram</a></li>
+            <li><a href="mailto:construcaocivilhp@gmail.com" target="_blank">Contato via E-mail</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=São+José+dos+Campos+SP" target="_blank">Nossa Localização (São José dos Campos )</a></li>
         </ul>
 
         <div class="footer">
             <p>&copy; 2025 HP Construção Civil e Montagem</p>
         </div>
     </div>
-
 </body>
 </html>
