@@ -30,7 +30,7 @@
             text-align: center;
         }
         .profile-pic {
-            width: 120px;
+            width: 120px; /* Tamanho padrão para telas maiores */
             height: 120px;
             border-radius: 50%;
             object-fit: cover;
@@ -72,7 +72,6 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.1);
         }
-        /* Botão de destaque */
         .links-list a.highlight {
             background-color: var(--primary-color);
             color: white;
@@ -83,13 +82,19 @@
             font-size: 0.8em;
             color: #999;
         }
+        /* AJUSTE PARA CELULAR: Reduz o tamanho do logo em telas menores */
+        @media (max-width: 480px) {
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Logo da HP Construção Civil com link corrigido -->
-        <img src="WhatsApp Image 2025-09-16 at 11.40.25.jpeg">
+        <img src="logo-hp.png" alt="Logo HP Construção Civil" class="profile-pic">
         
         <h1>HP Construção Civil e Montagem</h1>
         <p>Soluções em construção e montagem industrial.</p>
@@ -111,7 +116,7 @@
                 </a>
             </li>
             <li>
-                <a href="mailto:pdvjunior39@gmail.com" target="_blank">
+                <a href="mailto:construcaocivilhp@gmail.com" target="_blank">
                     Contato via E-mail
                 </a>
             </li>
@@ -129,4 +134,3 @@
 
 </body>
 </html>
-
